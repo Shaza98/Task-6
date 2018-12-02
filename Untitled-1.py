@@ -5,9 +5,13 @@ with open('file.csv', 'w') as f:
 
     while (1):
         name = input()
+        if(name== "STOP"): break
         email = input()
+        if(email== "STOP"): break
         mobile = int(input())
+        if(mobile== "STOP"): break
         university = input()
+        if(university== "STOP"): break
         major = input()
-        w.writerow([name, email, mobile, university, major])
-        if(name or email or mobile or university or major == "STOP"): break
+        if(major == "STOP"): break
+        w.writerow([name, email, mobile, university, major, "\n"])
